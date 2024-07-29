@@ -10,6 +10,7 @@ import android.view.WindowManager
 import android.widget.FrameLayout
 import com.example.cicd_sample_android.R
 import com.unity3d.player.UnityPlayer
+
 import java.lang.Exception
 
 class UnityFragment : Fragment() {
