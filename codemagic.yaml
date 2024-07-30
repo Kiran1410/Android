@@ -12,4 +12,4 @@ workflows:
       - name: Build path confirmation
         script: ls -lart app/build/outputs/apk && ls -lart app/build/outputs/apk/debug
     artifacts:
-      - build/outputs/**/*.apk
+      - app/build/outputs/**/*.apk
