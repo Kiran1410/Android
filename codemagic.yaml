@@ -4,7 +4,10 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m1
     scripts:
+      - name: Change permissions for Gradle
+        script: chmod 777 gradlew
       - name: Build Android release
-        script: gradlew assembleRelease
+        script: ./gradlew assembleRelease
+
 artifacts:
   - app/build/outputs/**/*.apk
