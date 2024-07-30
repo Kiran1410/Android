@@ -7,6 +7,6 @@ workflows:
       - name: Change permissions for Gradle
         script: chmod 777 gradlew
       - name: Build Android release
-        script: ./gradlew assembldebug
+        script: ./gradlew assembledebug
 artifacts:
   - app/build/outputs/**/*.apk
