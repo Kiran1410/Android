@@ -10,6 +10,6 @@ workflows:
       - name: Build Android release
         script: ./gradlew assembledebug
       - name: Build path confirmation
-        script: ls -lart app/build/outputs/apk
+        script: ls -lart app/build/outputs/apk && ls -lart app/build/outputs/apk/debug
     artifacts:
       - build/outputs/**/*.apk
